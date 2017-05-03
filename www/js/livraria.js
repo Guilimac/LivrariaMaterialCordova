@@ -6,3 +6,15 @@ $('.collection-item').on('click', function () {
  }
  $badge.text(parseInt($badge.text()) + 1);
 }); 
+
+$('.modal-trigger').leanModal(); 
+
+$('#confirmar').on('click', function() {
+var texto = '';
+ $('.badge').parent().each(function(){
+ var produto = this.firstChild.textContent;
+ var quantidade = this.lastChild.textContent;
+ texto += produto + ': ' + quantidade + ', ';
+ });
+ $('#resumo').text(texto);
+}); 

@@ -64,6 +64,24 @@
             <a class="collection-item waves-effect">Estojo</a>
         </div> 
     </div> 
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect
+        waves-light blue modal-trigger"><i class="material-icons">done</i>
+        </a>
+    </div> 
+    <div class="modal modal-fixed-footer" id="confirmacao">
+        <div class="modal-content">
+            <h5>Resumo dos itens selecionados</h5>
+            <input type="number" class="validate"
+                placeholder="Número do vendedor" id="numero-vendedor">
+            <blockquote id="resumo"></blockquote> 
+        </div>
+        <div class="modal-footer">
+            rodape
+        </div>
+    </div> 
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/livraria.js"></script>
