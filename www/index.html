@@ -14,9 +14,16 @@
         <div class="teal darken-4 white-text valign-wrapper">
             <h5 class="titulo">Livraria da MOB</h5>
             <div>
-                <i class="material-icons waves-effect waves-light
-                waves-circle">more_vert</i>
+                <i 
+                data-activates="submenu"
+                data-gutter="5"
+                data-contrainwidth="false"
+                class="material-icons waves-effect waves-light
+                waves-circle  dropdown-button">more_vert</i>
             </div> 
+            <ul class="dropdown-content" id="submenu">
+                <li><a class="black-text acao-limpar" href="">Limpar</a></li>
+            </ul> 
 
         </div> 
     </div>
@@ -77,7 +84,13 @@
             <blockquote id="resumo"></blockquote> 
         </div>
         <div class="modal-footer">
-            rodape
+            <button class="btn deep-orange waves-effect waves-light modal-close">
+                Concluir
+            </button>
+            <button class="acao-limpar btn-flat waves-effect waves-red modal-close">
+                Cancelar
+            </button> 
+
         </div>
     </div> 
 
